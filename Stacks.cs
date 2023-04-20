@@ -18,6 +18,30 @@ namespace StackAndQueue
             node.next=top;
             top=node;        
         }
+        public void Peek()
+        {
+            if (top == null) 
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else 
+            {
+                Console.WriteLine(top.data);
+            }
+
+        }
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is empty");
+            }
+            else
+            {
+                Node node = top;
+                top = top.next;
+            }
+        }
         public void Display()
         {
             if (top==null)
