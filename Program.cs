@@ -16,6 +16,12 @@ namespace StackAndQueue
             queue.Displya();
 
             Console.WriteLine("\n"+queue.front.data+"<-top data in qeueu");
+            queue.Deqeue();
+            Console.WriteLine("remaing stored data in Qeueue after deqeue");
+            queue.Displya();
+
+            Console.WriteLine("\n" + queue.front.data + "<-top data in qeue after deqeue");
+
             //stacks.Push(70);
             //stacks.Push(30);
             //stacks.Push(56);

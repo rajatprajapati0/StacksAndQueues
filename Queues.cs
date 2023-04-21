@@ -23,6 +23,17 @@ namespace StackAndQueue
             }
 
         }
+        public void Deqeue()
+        {
+            if (front == null)
+            {
+                Console.WriteLine("empty");
+            }
+            else
+            {
+                front = front.next;
+            }
+        }
         public void Displya()
         {
             if (front == null)
